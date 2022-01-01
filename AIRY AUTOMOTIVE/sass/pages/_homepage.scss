@@ -1,0 +1,56 @@
+.hero-slider{
+	position: relative;
+	background-color: $secondary-color;
+	.slides{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		@include clearfix;
+
+		li{
+			padding-top: 150px;
+			min-height: 790px;
+			float: left;
+			margin-right: -100%;
+			width: 100%;
+			text-align: center;
+			color: white;
+	
+		}
+
+		
+	}
+
+	.flex-control-paging{
+		list-style: none;
+		padding-left:0;
+		margin: 0;
+		text-align: center;
+		position: absolute;
+		bottom: 30px;
+		width: 100%;
+		left: 0;
+		z-index: 5;
+
+		li{
+			display: inline-block;
+			margin: 0 2px;
+
+			a{
+				display: block;
+				width: 50px;
+				height: 5px;
+				background: white;
+				overflow: hidden;
+				text-indent: -9999px;
+				cursor: pointer;
+				transition: .3 ease;
+
+				&.flex-active{
+					background: $accent-color;
+
+				}
+			}
+		}
+	}
+}

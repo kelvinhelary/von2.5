@@ -1,0 +1,27 @@
+
+
+ .site-footer{
+ 	background-color: $secondary-color;
+ 	padding: 80px 0;
+ 	text-align: center;
+ }
+
+ 
+
+ .social-links{
+ 	margin-bottom: 30px;
+ 	a{
+ 		color: $body-color;
+ 		display: inline-block;
+ 		padding: 10px;
+ 		transition: .3s ease;
+
+ 		&:hover{
+ 			color: $accent-color;
+ 		}
+ 	}
+ }
+
+ .copy{
+ 	@include em(15);
+ }
